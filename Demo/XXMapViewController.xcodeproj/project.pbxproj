@@ -8,25 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		91CD4384E1F55B3027E41229 /* Pods_XXMapViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CCBE08A0C7F495BE92991F /* Pods_XXMapViewController.framework */; };
-		CB1E84BE1D9CFCF20042318A /* AddressListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E84BD1D9CFCF20042318A /* AddressListView.swift */; };
-		CB1E84C41D9D166F0042318A /* SearchKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1E84C31D9D166F0042318A /* SearchKeyWordViewController.swift */; };
 		CB8DD8EA1D9BB0D300088E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DD8E91D9BB0D300088E46 /* AppDelegate.swift */; };
 		CB8DD8EC1D9BB0D300088E46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DD8EB1D9BB0D300088E46 /* ViewController.swift */; };
 		CB8DD8F11D9BB0D300088E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB8DD8F01D9BB0D300088E46 /* Assets.xcassets */; };
 		CB8DD8F41D9BB0D300088E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB8DD8F21D9BB0D300088E46 /* LaunchScreen.storyboard */; };
 		CB8DD8FF1D9BB0D300088E46 /* XXMapViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DD8FE1D9BB0D300088E46 /* XXMapViewControllerTests.swift */; };
 		CB8DD90A1D9BB0D300088E46 /* XXMapViewControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DD9091D9BB0D300088E46 /* XXMapViewControllerUITests.swift */; };
-		CB8DD9181D9BB24700088E46 /* XXMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8DD9171D9BB24600088E46 /* XXMapViewController.swift */; };
 		CB8DD91C1D9BB4A600088E46 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD91B1D9BB4A600088E46 /* CoreLocation.framework */; };
 		CB8DD91E1D9BB4B000088E46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD91D1D9BB4B000088E46 /* QuartzCore.framework */; };
 		CB8DD9201D9BB4BA00088E46 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD91F1D9BB4BA00088E46 /* OpenGLES.framework */; };
 		CB8DD9221D9BB4D600088E46 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD9211D9BB4D600088E46 /* SystemConfiguration.framework */; };
 		CB8DD9241D9BB4E000088E46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD9231D9BB4E000088E46 /* CoreGraphics.framework */; };
 		CB8DD9261D9BB4EB00088E46 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CB8DD9251D9BB4EB00088E46 /* libstdc++.6.0.9.tbd */; };
-		CBCA4CE61DACC91800AD88AA /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA4CE51DACC91800AD88AA /* AddressListTableViewCell.swift */; };
-		CBD54F6A1DAF2A39006AA1AF /* AddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD54F691DAF2A39006AA1AF /* AddressDetailViewController.swift */; };
-		CBD54F6C1DAF2A64006AA1AF /* AddressDetailTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD54F6B1DAF2A64006AA1AF /* AddressDetailTransitioning.swift */; };
-		CBF4A2491DA88E4F003165B1 /* SearchKeyWordTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF4A2481DA88E4F003165B1 /* SearchKeyWordTransitioning.swift */; };
+		CBC8F1B41DB0B95F00C0E4AC /* AddressDetailTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1AD1DB0B95F00C0E4AC /* AddressDetailTransitioning.swift */; };
+		CBC8F1B51DB0B95F00C0E4AC /* AddressDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1AE1DB0B95F00C0E4AC /* AddressDetailViewController.swift */; };
+		CBC8F1B61DB0B95F00C0E4AC /* AddressListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1AF1DB0B95F00C0E4AC /* AddressListTableViewCell.swift */; };
+		CBC8F1B71DB0B95F00C0E4AC /* AddressListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1B01DB0B95F00C0E4AC /* AddressListView.swift */; };
+		CBC8F1B81DB0B95F00C0E4AC /* SearchKeyWordTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1B11DB0B95F00C0E4AC /* SearchKeyWordTransitioning.swift */; };
+		CBC8F1B91DB0B95F00C0E4AC /* SearchKeyWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1B21DB0B95F00C0E4AC /* SearchKeyWordViewController.swift */; };
+		CBC8F1BA1DB0B95F00C0E4AC /* XXMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC8F1B31DB0B95F00C0E4AC /* XXMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +50,6 @@
 		00CCBE08A0C7F495BE92991F /* Pods_XXMapViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XXMapViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		563DAB9635F7588AFD54E643 /* Pods-XXMapViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXMapViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-XXMapViewController/Pods-XXMapViewController.release.xcconfig"; sourceTree = "<group>"; };
 		AE535EAF3627E47A0ECA5975 /* Pods-XXMapViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXMapViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXMapViewController/Pods-XXMapViewController.debug.xcconfig"; sourceTree = "<group>"; };
-		CB1E84BD1D9CFCF20042318A /* AddressListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListView.swift; sourceTree = "<group>"; };
-		CB1E84C31D9D166F0042318A /* SearchKeyWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyWordViewController.swift; sourceTree = "<group>"; };
 		CB8DD8E61D9BB0D300088E46 /* XXMapViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XXMapViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8DD8E91D9BB0D300088E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB8DD8EB1D9BB0D300088E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +62,6 @@
 		CB8DD9051D9BB0D300088E46 /* XXMapViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXMapViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB8DD9091D9BB0D300088E46 /* XXMapViewControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXMapViewControllerUITests.swift; sourceTree = "<group>"; };
 		CB8DD90B1D9BB0D300088E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB8DD9171D9BB24600088E46 /* XXMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXMapViewController.swift; sourceTree = "<group>"; };
 		CB8DD91A1D9BB40300088E46 /* XXMapViewController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XXMapViewController-Bridging-Header.h"; sourceTree = "<group>"; };
 		CB8DD91B1D9BB4A600088E46 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CB8DD91D1D9BB4B000088E46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -72,10 +69,13 @@
 		CB8DD9211D9BB4D600088E46 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CB8DD9231D9BB4E000088E46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CB8DD9251D9BB4EB00088E46 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		CBCA4CE51DACC91800AD88AA /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
-		CBD54F691DAF2A39006AA1AF /* AddressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailViewController.swift; sourceTree = "<group>"; };
-		CBD54F6B1DAF2A64006AA1AF /* AddressDetailTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailTransitioning.swift; sourceTree = "<group>"; };
-		CBF4A2481DA88E4F003165B1 /* SearchKeyWordTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyWordTransitioning.swift; sourceTree = "<group>"; };
+		CBC8F1AD1DB0B95F00C0E4AC /* AddressDetailTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailTransitioning.swift; sourceTree = "<group>"; };
+		CBC8F1AE1DB0B95F00C0E4AC /* AddressDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressDetailViewController.swift; sourceTree = "<group>"; };
+		CBC8F1AF1DB0B95F00C0E4AC /* AddressListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListTableViewCell.swift; sourceTree = "<group>"; };
+		CBC8F1B01DB0B95F00C0E4AC /* AddressListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddressListView.swift; sourceTree = "<group>"; };
+		CBC8F1B11DB0B95F00C0E4AC /* SearchKeyWordTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyWordTransitioning.swift; sourceTree = "<group>"; };
+		CBC8F1B21DB0B95F00C0E4AC /* SearchKeyWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchKeyWordViewController.swift; sourceTree = "<group>"; };
+		CBC8F1B31DB0B95F00C0E4AC /* XXMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XXMapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,13 +160,7 @@
 			children = (
 				CB8DD8E91D9BB0D300088E46 /* AppDelegate.swift */,
 				CB8DD8EB1D9BB0D300088E46 /* ViewController.swift */,
-				CB8DD9171D9BB24600088E46 /* XXMapViewController.swift */,
-				CB1E84C31D9D166F0042318A /* SearchKeyWordViewController.swift */,
-				CBF4A2481DA88E4F003165B1 /* SearchKeyWordTransitioning.swift */,
-				CBD54F691DAF2A39006AA1AF /* AddressDetailViewController.swift */,
-				CBD54F6B1DAF2A64006AA1AF /* AddressDetailTransitioning.swift */,
-				CB1E84BD1D9CFCF20042318A /* AddressListView.swift */,
-				CBCA4CE51DACC91800AD88AA /* AddressListTableViewCell.swift */,
+				CBC8F1AC1DB0B95F00C0E4AC /* XXMapViewController */,
 				CB8DD8F01D9BB0D300088E46 /* Assets.xcassets */,
 				CB8DD8F21D9BB0D300088E46 /* LaunchScreen.storyboard */,
 				CB8DD8F51D9BB0D300088E46 /* Info.plist */,
@@ -191,6 +185,20 @@
 				CB8DD90B1D9BB0D300088E46 /* Info.plist */,
 			);
 			path = XXMapViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		CBC8F1AC1DB0B95F00C0E4AC /* XXMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CBC8F1AD1DB0B95F00C0E4AC /* AddressDetailTransitioning.swift */,
+				CBC8F1AE1DB0B95F00C0E4AC /* AddressDetailViewController.swift */,
+				CBC8F1AF1DB0B95F00C0E4AC /* AddressListTableViewCell.swift */,
+				CBC8F1B01DB0B95F00C0E4AC /* AddressListView.swift */,
+				CBC8F1B11DB0B95F00C0E4AC /* SearchKeyWordTransitioning.swift */,
+				CBC8F1B21DB0B95F00C0E4AC /* SearchKeyWordViewController.swift */,
+				CBC8F1B31DB0B95F00C0E4AC /* XXMapViewController.swift */,
+			);
+			path = XXMapViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -374,15 +382,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD54F6C1DAF2A64006AA1AF /* AddressDetailTransitioning.swift in Sources */,
-				CBF4A2491DA88E4F003165B1 /* SearchKeyWordTransitioning.swift in Sources */,
-				CB1E84C41D9D166F0042318A /* SearchKeyWordViewController.swift in Sources */,
-				CBCA4CE61DACC91800AD88AA /* AddressListTableViewCell.swift in Sources */,
-				CB8DD9181D9BB24700088E46 /* XXMapViewController.swift in Sources */,
-				CBD54F6A1DAF2A39006AA1AF /* AddressDetailViewController.swift in Sources */,
+				CBC8F1B51DB0B95F00C0E4AC /* AddressDetailViewController.swift in Sources */,
+				CBC8F1B41DB0B95F00C0E4AC /* AddressDetailTransitioning.swift in Sources */,
+				CBC8F1B91DB0B95F00C0E4AC /* SearchKeyWordViewController.swift in Sources */,
+				CBC8F1BA1DB0B95F00C0E4AC /* XXMapViewController.swift in Sources */,
+				CBC8F1B61DB0B95F00C0E4AC /* AddressListTableViewCell.swift in Sources */,
 				CB8DD8EC1D9BB0D300088E46 /* ViewController.swift in Sources */,
-				CB1E84BE1D9CFCF20042318A /* AddressListView.swift in Sources */,
+				CBC8F1B81DB0B95F00C0E4AC /* SearchKeyWordTransitioning.swift in Sources */,
 				CB8DD8EA1D9BB0D300088E46 /* AppDelegate.swift in Sources */,
+				CBC8F1B71DB0B95F00C0E4AC /* AddressListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,11 +48,7 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
         locationButton.setImage(UIImage.init(named: "iconfont_location_request"), forState: UIControlState.Normal)
         locationButton.addTarget(self, action: #selector(locationRequest(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(locationButton)
-        addressListView = AddressListView(frame: CGRect(x: 0, y: self.view.frame.height-260, width: self.view.frame.width, height: 260))
-        addressListView.frame.origin.y = self.view.frame.height-60
-        addressListView.delegate = self
-        self.view.addSubview(addressListView!)
-        initSearchC();
+        
         let enlargeButton = UIButton(type: UIButtonType.Custom)
         enlargeButton.frame = CGRect(x: SCREEN_WIDTH-50, y: 200, width: 30, height: 30)
         enlargeButton.setImage(UIImage(named: "zoomIn"), forState: .Normal)
@@ -67,6 +63,11 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
         narrowButton.addTarget(self, action: #selector(narrowAction), forControlEvents: .TouchUpInside)
         self.view.addSubview(narrowButton)
         
+        addressListView = AddressListView(frame: CGRect(x: 0, y: self.view.frame.height-260, width: self.view.frame.width, height: 260))
+        addressListView.frame.origin.y = self.view.frame.height-60
+        addressListView.delegate = self
+        self.view.addSubview(addressListView!)
+        initSearchC();
     }
     
     func enlargeAction() {
@@ -239,7 +240,7 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
       let point =  sender.locationInView(self.view)
         if SCREEN_HEIGHT-point.y > 60 {
             addressListView.frame = CGRect(x: 0, y: point.y, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-point.y)
-            addressListView.tableView.frame.size.height = addressListView.frame.size.height
+            addressListView.tableView.frame.size.height = addressListView.frame.size.height-60
         }else{
             addressListView.frame.origin.y = SCREEN_HEIGHT - 60
         }
