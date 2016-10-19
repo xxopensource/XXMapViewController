@@ -33,8 +33,11 @@ class AddressDetailViewController: UIViewController {
         self.view.addSubview(contentView)
         
         infoLabel.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: 60)
+        infoLabel.textAlignment = .Center
         contentView.addSubview(infoLabel)
         detailLabel.frame = CGRect(x: 0, y: 60, width: SCREEN_WIDTH, height: 60)
+        detailLabel.textColor = UIColor(colorLiteralRed: 138.0/255.0, green: 138.0/255.0, blue: 138.0/255.0, alpha: 1.0)
+        detailLabel.font = UIFont.systemFontOfSize(15.0)
         detailLabel.numberOfLines = 0
         contentView.addSubview(detailLabel)
         // Do any additional setup after loading the view.

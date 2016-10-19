@@ -20,6 +20,7 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
     var pan: UIPanGestureRecognizer!
     var locationButton: UIButton!
     
+    
     private func initSearchC() {
         let topView = UIView()
         topView.backgroundColor = UIColor.whiteColor()
@@ -47,11 +48,34 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
         locationButton.setImage(UIImage.init(named: "iconfont_location_request"), forState: UIControlState.Normal)
         locationButton.addTarget(self, action: #selector(locationRequest(_:)), forControlEvents: .TouchUpInside)
         self.view.addSubview(locationButton)
+        
+        let enlargeButton = UIButton(type: UIButtonType.Custom)
+        enlargeButton.frame = CGRect(x: SCREEN_WIDTH-50, y: 200, width: 30, height: 30)
+        enlargeButton.setImage(UIImage(named: "zoomIn"), forState: .Normal)
+        enlargeButton.backgroundColor = UIColor.whiteColor()
+        enlargeButton.addTarget(self, action: #selector(enlargeAction), forControlEvents: .TouchUpInside)
+        self.view.addSubview(enlargeButton)
+        
+        let narrowButton = UIButton(type: UIButtonType.Custom)
+        narrowButton.frame = CGRect(x: SCREEN_WIDTH-50, y: 200+33, width: 30, height: 30)
+        narrowButton.setImage(UIImage(named: "zoomOut"), forState: .Normal)
+        narrowButton.backgroundColor = UIColor.whiteColor()
+        narrowButton.addTarget(self, action: #selector(narrowAction), forControlEvents: .TouchUpInside)
+        self.view.addSubview(narrowButton)
+        
         addressListView = AddressListView(frame: CGRect(x: 0, y: self.view.frame.height-260, width: self.view.frame.width, height: 260))
         addressListView.frame.origin.y = self.view.frame.height-60
         addressListView.delegate = self
         self.view.addSubview(addressListView!)
         initSearchC();
+    }
+    
+    func enlargeAction() {
+        _mapView?.zoomIn()
+    }
+    
+    func narrowAction() {
+        _mapView?.zoomOut()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -61,7 +85,7 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
         //_mapView?.showsUserLocation = false//先关闭显示的定位图层
         _mapView?.userTrackingMode = BMKUserTrackingModeFollow;//设置定位的状态
         _mapView?.showsUserLocation = true//显示定位图层
-        _mapView?.zoomLevel = 18;
+        _mapView?.zoomLevel = 18
         locationService = BMKLocationService()
         locationService.allowsBackgroundLocationUpdates = true
         geoCodeSearch = BMKGeoCodeSearch()
@@ -216,7 +240,7 @@ class XXMapViewController: UIViewController,BMKMapViewDelegate,BMKLocationServic
       let point =  sender.locationInView(self.view)
         if SCREEN_HEIGHT-point.y > 60 {
             addressListView.frame = CGRect(x: 0, y: point.y, width: SCREEN_WIDTH, height: SCREEN_HEIGHT-point.y)
-            addressListView.tableView.frame.size.height = addressListView.frame.size.height
+            addressListView.tableView.frame.size.height = addressListView.frame.size.height-60
         }else{
             addressListView.frame.origin.y = SCREEN_HEIGHT - 60
         }
